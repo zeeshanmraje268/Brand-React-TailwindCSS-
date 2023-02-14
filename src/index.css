@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    li{
+        @apply text-[1.1rem] font-medium px-3 cursor-pointer;
+    }
+    li:hover{
+        @apply text-indigo-500;
+    }
+    .btn1{
+        @apply text-indigo-500 px-4 py-2  text-[1.2rem] border-2 border-transparent  ;
+    }
+   
+    .btn1:hover{
+        @apply  border-indigo-500 border-2 rounded-md ;
+    }
+    .btn2{
+        @apply bg-indigo-500 text-white px-4 py-2 rounded-md mx-4 border-2 border-transparent text-[1.2rem] ;
+    }
+    .btn2:hover{
+        @apply bg-transparent text-indigo-500 border-2  border-indigo-500;
+    }
+}
+
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #036cdb;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0.2);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
